@@ -2603,17 +2603,22 @@ header.header-fixed {
 
 header.header-fixed .logo a {
 	display: block;
-	padding: 20px;
+	/* padding: 20px; */
 	text-align: center;
-	background: var(--color-primary);
+	/* background: var(--color-primary); */
 }
 
-header.header-fixed .logo img {
+header.header-fixed {
 	height: auto;
 	width: auto;
-	max-height: 60px;
+	/* max-height: 60px; */
 }
+.logo img{
+	width: 150px;
+	padding: 0px 10px;
+	margin: 0px;
 
+}
 header.header-fixed .video {
 	position: relative;
 	background-size: cover;
