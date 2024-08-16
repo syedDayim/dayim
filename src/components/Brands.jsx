@@ -52,6 +52,7 @@ export default function Brands({ data }) {
             <div key={index}>
               <div className="pt-3 pb-3 text-center d-flex align-items-center justify-content-center w-100">
                 <img src={item.src} alt={item.alt} className="w-100" />
+
               </div>
             </div>
           ))}

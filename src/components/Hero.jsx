@@ -24,7 +24,7 @@ export default function Hero({ data, socialData }) {
               >
                 {heading}
               </h1>
-              <h2
+              <h3
                 data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-delay="200"
@@ -34,7 +34,7 @@ export default function Hero({ data, socialData }) {
                   speed={0}
                   repeat={Infinity}
                 />
-              </h2>
+              </h3>
               <p
                 className="text"
                 data-aos="fade-up"

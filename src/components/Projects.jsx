@@ -54,14 +54,14 @@ export default function Projects({ data }) {
                   <div className="project-box">
                     <div className="project-media">
                       <img src={item.thumbUrl} alt="Thumb" />
-                      <span
+                      {/* <span
                         className="gallery-link"
                         onClick={() => handelProjectDetails(item, 'image')}
                       >
                         <i>
                           <Icon icon="bi:plus" />
                         </i>
-                      </span>
+                      </span> */}
                     </div>
                     <div className="project-body">
                       <div className="text">
@@ -69,12 +69,17 @@ export default function Projects({ data }) {
                         <span>{item.subTitle}</span>
                       </div>
                       <div className="link">
-                        <span
+                        <a
+                          href={item.details.url} // Use the URL from your project data
+                          target="_blank"          // Opens the link in a new tab
+                          rel="noopener noreferrer" // Security measure to prevent phishing
                           className="p-link"
-                          onClick={() => handelProjectDetails(item, 'details')}
                         >
-                          <Icon icon="bi:arrow-right" />
-                        </span>
+                          <Icon icon="bi:link" />
+                        </a>
+                        <br />
+                        <br />
+                        <br />
                       </div>
                     </div>
                   </div>
@@ -84,7 +89,7 @@ export default function Projects({ data }) {
           </div>
         </div>
       </section>
-      {modal && (
+      {/* {modal && (
         <div className="mfp-wrap">
           <div className="mfp-container">
             <div className="mfp-bg" onClick={() => setModal(!modal)}></div>
@@ -104,7 +109,7 @@ export default function Projects({ data }) {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }

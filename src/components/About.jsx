@@ -52,7 +52,7 @@ export default function About({ data }) {
                   </h6>
                 )}
 
-                {title && <h2>{parser(title)}</h2>}
+                {title && <h3>{parser(title)}</h3>}
               </div>
               <p>{description}</p>
               <div className="review-box">
