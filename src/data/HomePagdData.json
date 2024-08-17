@@ -1,6 +1,6 @@
 {
   "hero": {
-    "imgUrl": "/images/avatar-1.png",
+    "imgUrl": "/images/Profile.jpeg",
     "name": "Syed Dayim Shah",
     "heading": "Hey! I'm Dayim",
     "typingText": ["I'm a Software Developer", 1500, "I'm a IoT Developer", 1500],
@@ -241,25 +241,25 @@
     "allTestimonial": [
       {
         "reviewText": "Working with Dayim was an absolute pleasure. He brought a level of expertise and dedication that truly elevated our project. From the start, Dayim demonstrated a deep understanding of our needs and delivered solutions that exceeded our expectations. Their ability to turn complex problems into seamless, efficient applications was remarkable. The attention to detail and commitment to quality he showed made a significant impact on our success. I highly recommend Dayim for anyone looking for a reliable and skilled developer.",
-        "avatarImg": "/images/avatar-1.jpg",
+        "avatarImg": "/images/ahsan.jpeg",
         "avatarName": "Ehsan Ali",
         "avatarCompany": "Founder of Farm Vision"
       },
       {
         "reviewText": "Partnering with Dayim was one of the best decisions we made for our project. His in-depth knowledge and skillset in software development was truly impressive. Dayim's consistently delivered high-quality work, often going above and beyond to ensure that every aspect of the project was flawless. Their ability to understand our vision and translate it into a functional and polished product was remarkable. I highly recommend Dayim to anyone seeking a talented and dependable developer.",
-        "avatarImg": "/images/avatar-2.jpg",
+        "avatarImg": "/images/tripease.png",
         "avatarName": "Ubair Mir",
         "avatarCompany": "Founder of The Trip Ease"
       },
       {
         "reviewText": "Dayim is a hard working developer and passionate software enthusiast. In my experience with working with Dayim, I've found him to be extremely responsive, calculated and punctual. I would recommend Dayim for companies and individuals looking to hire a good software/web developer for their projects.",
-        "avatarImg": "/images/avatar-3.jpg",
+        "avatarImg": "/images/aqid.jpeg",
         "avatarName": "Er. Aaqid Masoodi",
         "avatarCompany": "Software Developer"
       },
       {
         "reviewText": "Mr Dayim is having a great skill in cutting edge technologies like software development and machine learning. He always work towards his goals in effective and efficient manners. Working with Mr Dayim in CodeSquads have been always a learning experience fo me.",
-        "avatarImg": "/images/avatar-3.jpg",
+        "avatarImg": "/images/abid.jpeg",
         "avatarName": "Er. Abid Farooq",
         "avatarCompany": "Team Lead for Automation at Global PayExSoftware Engineer"
       }
