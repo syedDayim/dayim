@@ -60,7 +60,7 @@
   ],
 
   "about": {
-    "imgSrc": "/images/about-banner.png",
+    "imgSrc": "/images/aboutMe.png",
     "miniTitle": "About Me",
     "title": "I AM AVAILABLE FOR <br> <span>Software & App Development</span>",
     "description": "I create modern web solutions, mobile apps, and IoT integrations that solve real-world problems. My work focuses on turning complex challenges into user-friendly applications and connected devices. Whether you need a dynamic web app, a sleek mobile app, or an IoT system, I’m here to bring your ideas to life.",
@@ -113,6 +113,20 @@
           "platform": "WordPress",
           "country": "USA",
           "url": "https://tenzies-game-red-chi.vercel.app/"
+        }
+      },
+      {
+        "thumbUrl": "/images/Travel.png",
+        "title": "Kashmir Boulevard",
+        "subTitle": "Created a Travel Website for a Tour & Travel Client",
+        "details": {
+          "title": "Website Design for Marketing Agency Startup",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "type": "Website",
+          "langages": "PHP, HTML, CSS, JS",
+          "platform": "WordPress",
+          "country": "USA",
+          "url": "www.example.com"
         }
       },
       {
@@ -270,7 +284,7 @@
       "title": "Let’s Discuss Your Project",
       "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
     },
-    "contactImg": "/images/contact-us.png",
+    "contactImg": "/images/contact.png",
     "contactInfo": [
       { "title": "Write an e-mail", "email": "dayim1277@gmail.com" },
       { "title": "write an e-mail", "tel": "+919541558025" }
