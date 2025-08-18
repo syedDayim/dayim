@@ -14,10 +14,7 @@
       "iconBgClass": "linkedin",
       "href": "https://linkedin.com/in/syeddayimshah"
     },
-    { 
-      "icon": "fa-brands:facebook", 
-      "iconBgClass": "dribbble", 
-      "href": "https://www.facebook.com/share/6qZ55hn5re9kgioj/?mibextid=qi2Omg" },
+  
     {
       "icon": "fa-brands:github",
       "iconBgClass": "linkedin",
