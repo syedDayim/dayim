@@ -4,7 +4,7 @@
     "name": "Syed Dayim Shah",
     "heading": "Hey! I'm Dayim",
     "typingText": ["I'm a Software Developer", 1500, "I'm a IoT Developer", 1500],
-    "description": "I'm a MERN stack developer with a passion for web and app development , IoT projects, and hosting solutions. I enjoy blending software, hardware, and deployment strategies to create innovative, real-world solutions.",
+    "description": "I'm a developer with a passion for web and app development , IoT projects, and hosting solutions. I am also well versed in networking. I enjoy blending software, hardware, and deployment strategies to create innovative, real-world solutions.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
   },
@@ -19,6 +19,11 @@
       "icon": "fa-brands:github",
       "iconBgClass": "linkedin",
       "href": "https://github.com/syedDayim"
+    },
+    {
+      "icon": "fa-brands:whatsapp",
+      "iconBgClass": "facebook",
+      "href": "https://wa.me/+919541558025"
     }
   ],
   "brands": [
@@ -90,10 +95,7 @@
         "subTitle": "Created NPM package that generates Express Application",
         "details": {
           "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
           "country": "USA",
           "url": "https://www.npmjs.com/package/my-express-generator"
         }
@@ -104,7 +106,6 @@
         "subTitle": "Created Classic Tenzies Game",
         "details": {
           "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           "type": "Website",
           "langages": "PHP, HTML, CSS, JS",
           "platform": "WordPress",
@@ -143,6 +144,20 @@
       {
         "thumbUrl": "/images/TwitterBot.png",
         "title": "Twitter Bot",
+        "subTitle": "Created a twitter bot that is able to tweet on twitter everyday, and is able to reply to the tweets.",
+        "details": {
+          "title": "Website Design for Marketing Agency Startup",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "type": "Website",
+          "langages": "PHP, HTML, CSS, JS",
+          "platform": "WordPress",
+          "country": "USA",
+          "url": "https://github.com/syedDayim/TwitterBotAutomation"
+        }
+      },
+            {
+        "thumbUrl": "/images/cogmiraAi.png",
+        "title": "Cogmira AI",
         "subTitle": "Created a twitter bot that is able to tweet on twitter everyday, and is able to reply to the tweets.",
         "details": {
           "title": "Website Design for Marketing Agency Startup",

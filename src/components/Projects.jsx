@@ -1,25 +1,10 @@
 import { Icon } from '@iconify/react';
-import React, { useState } from 'react';
 import SectionHeading from './SectionHeading';
 import Slider from 'react-slick';
-import Modal from './Modal';
+
 
 export default function Projects({ data }) {
-  const [modal, setModal] = useState(false);
-  const [modalType, setModalType] = useState('image');
-  const [modalData, setModalData] = useState({});
   const { sectionHeading, allProjects } = data;
-  const handelProjectDetails = (item, itemType) => {
-    if (itemType === 'image') {
-      setModalData(item);
-    } else {
-      setModalData(item);
-    }
-    setModalType(itemType);
-
-    setModal(!modal);
-    console.log(modalType);
-  };
 
   var settings = {
     dots: true,
