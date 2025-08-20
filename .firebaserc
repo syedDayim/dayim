@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "syed-dayim"
-  }
+  },
+  "targets": {
+    "syed-dayim": {
+      "hosting": {
+        "syed-dayim": [
+          "syed-dayim"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
