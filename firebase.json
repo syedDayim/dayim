@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "syed-dayim",
     "public": "build",
     "ignore": [
       "firebase.json",
