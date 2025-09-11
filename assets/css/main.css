@@ -1811,6 +1811,31 @@ section,
   color: var(--contrast-color);
 }
 
+/* Portfolio Loader */
+.portfolio .portfolio-loader {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolio-loader .spinner {
+  width: 42px;
+  height: 42px;
+  border: 4px solid color-mix(in srgb, var(--accent-color), transparent 75%);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: portfolio-spin 0.9s linear infinite;
+}
+
+@keyframes portfolio-spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
 @media (max-width: 768px) {
   .portfolio .portfolio-filters {
     gap: 10px;
@@ -2480,6 +2505,75 @@ section,
 
 .contact .contact-form .btn:hover {
   background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+}
+
+/* Redesigned contact actions */
+.contact .contact-actions {
+  background-color: var(--surface-color);
+  padding: 3rem;
+  border-radius: 1rem;
+  height: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.contact .contact-actions h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-actions p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 1.5rem;
+}
+
+.contact .contact-actions .action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.contact .contact-actions .action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  background: var(--surface-color);
+  color: var(--heading-color);
+  transition: transform .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.contact .contact-actions .action-btn:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  background: color-mix(in srgb, var(--accent-color), transparent 96%);
+}
+
+.contact .contact-actions .action-btn i {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.contact .contact-actions .action-btn.email i { color: #ea4335; }
+.contact .contact-actions .action-btn.whatsapp i { color: #25D366; }
+.contact .contact-actions .action-btn.linkedin i { color: #0A66C2; }
+.contact .contact-actions .action-btn.resume i { color: var(--accent-color); }
+
+.contact .contact-actions .action-btn.outline {
+  background: transparent;
+}
+
+.contact .contact-actions .copy-feedback {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+  .contact .contact-actions { padding: 1.5rem; }
 }
 
 /*--------------------------------------------------------------

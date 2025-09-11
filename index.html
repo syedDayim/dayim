@@ -552,16 +552,20 @@
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
+        <div class="portfolio-loader" aria-hidden="true">
+          <div class="spinner"></div>
+        </div>
+
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up">
             <li data-filter="*" class="filter-active"><i class="bi bi-grid-3x3"></i> All</li>
             <li data-filter=".filter-self">Self Projects</li>
             <li data-filter=".filter-games">Games</li>
             <li data-filter=".filter-clients">Client Work</li>
           </ul>
 
-          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="row g-4 isotope-container" data-aos="fade-up">
 
             <!-- Self Projects -->
             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-self">
@@ -1027,41 +1031,17 @@
           </div>
 
           <div class="col-lg-7">
-            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
-              <h3>Get In Touch</h3>
-              <p>Okay, if that left section didn't work for you. Go ahead fill up the tedious form.</p>
-
-              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                data-aos-delay="200">
-                <div class="row gy-4">
-
-                  <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-
-                  <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-
-                </div>
-              </form>
-
+            <div class="contact-actions" data-aos="fade-up" data-aos-delay="300">
+              <h3>Let's Connect</h3>
+              <p>Prefer a quick ping? Choose any method below to reach me instantly.</p>
+              <div class="action-grid">
+                <a href="mailto:dayim1277@gmail.com" class="action-btn email"><i class="bi bi-envelope"></i><span>Email Me</span></a>
+                <a href="https://wa.me/+919541558025" class="action-btn whatsapp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i><span>WhatsApp</span></a>
+                <a href="https://www.linkedin.com/in/syeddayimshah" class="action-btn linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a>
+                <a href="assets/Syed%20Dayim%20dev.pdf" class="action-btn resume" download><i class="bi bi-file-earmark-arrow-down"></i><span>Download Resume</span></a>
+                <button type="button" class="action-btn outline copy-email" data-copy="dayim1277@gmail.com"><i class="bi bi-clipboard"></i><span>Copy Email</span></button>
+              </div>
+              <small class="copy-feedback" aria-live="polite"></small>
             </div>
           </div>
 

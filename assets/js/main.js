@@ -147,14 +147,22 @@
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-        itemSelector: '.isotope-item',
-        layoutMode: layout,
-        filter: filter,
-        sortBy: sort
-      });
+    // Initialize Isotope immediately for faster first paint
+    let initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+      itemSelector: '.isotope-item',
+      layoutMode: layout,
+      filter: filter,
+      sortBy: sort
+    });
+
+    // Re-layout after images finish loading to correct positions
+    const isoContainer = isotopeItem.querySelector('.isotope-container');
+    const loaderEl = isotopeItem.parentElement.querySelector('.portfolio-loader');
+    if (loaderEl) loaderEl.style.display = 'flex';
+
+    imagesLoaded(isoContainer, function() {
+      initIsotope.layout();
+      if (loaderEl) loaderEl.style.display = 'none';
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
@@ -199,6 +207,28 @@
       faqItem.parentNode.classList.toggle('faq-active');
     });
   });
+
+  /**
+   * Copy email to clipboard in Contact actions
+   */
+  const copyBtn = document.querySelector('.copy-email');
+  if (copyBtn) {
+    const feedback = document.querySelector('.copy-feedback');
+    copyBtn.addEventListener('click', async () => {
+      const text = copyBtn.getAttribute('data-copy') || '';
+      try {
+        await navigator.clipboard.writeText(text);
+        if (feedback) {
+          feedback.textContent = 'Email copied to clipboard!';
+          setTimeout(() => (feedback.textContent = ''), 2000);
+        }
+      } catch (e) {
+        if (feedback) {
+          feedback.textContent = 'Copy failed. Please copy manually: ' + text;
+        }
+      }
+    });
+  }
 
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
