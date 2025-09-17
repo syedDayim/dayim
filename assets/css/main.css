@@ -1866,7 +1866,8 @@ section,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  opacity: 0; /* hidden until imagesLoaded completes */
 }
 
 .portfolio .portfolio-entry .entry-image .entry-overlay {
@@ -1935,6 +1936,10 @@ section,
 
 .portfolio .portfolio-entry .entry-image .entry-overlay .entry-links a:nth-child(2) {
   transition-delay: 0.2s;
+}
+
+.portfolio .isotope-container.images-ready .portfolio-entry .entry-image img {
+  opacity: 1;
 }
 
 .portfolio .portfolio-entry:hover .entry-image img {
@@ -2105,6 +2110,7 @@ section,
 .testimonials .testimonials-container .swiper-wrapper {
   height: auto !important;
   padding-bottom: 20px;
+  align-items: stretch;
 }
 
 .testimonials .testimonials-container .testimonial-item {
@@ -2114,6 +2120,8 @@ section,
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   height: 100%;
   border-top: 3px solid var(--accent-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonials .testimonials-container .testimonial-item .stars {
@@ -2138,6 +2146,13 @@ section,
 .testimonials .testimonials-container .testimonial-item .testimonial-profile {
   display: flex;
   align-items: center;
+  margin-top: auto;
+}
+
+/* Ensure slides stretch so all cards in the row match height */
+.testimonials .testimonials-container .swiper-slide {
+  height: auto;
+  display: flex;
 }
 
 .testimonials .testimonials-container .testimonial-item .testimonial-profile img {
@@ -3266,6 +3281,3 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}

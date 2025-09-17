@@ -162,6 +162,8 @@
 
     imagesLoaded(isoContainer, function() {
       initIsotope.layout();
+      // Reveal images all at once to avoid random popping
+      isoContainer.classList.add('images-ready');
       if (loaderEl) loaderEl.style.display = 'none';
     });
 
